@@ -8,6 +8,9 @@ First install Chocolatey
 ## Chrome
 	$ choco install googlechrome
 
+## Firefox
+    $ choco install firefox
+
 ## Git
 	$ choco install git
 
