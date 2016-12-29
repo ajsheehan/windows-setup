@@ -40,6 +40,7 @@ First install Chocolatey
 ### Plugins
 Launch VS Code Quick Open ```ctrl + p``` then enter the following
 
+    $ ext install c#
     $ ext install theme-cobalt2
 
 ### settings.json
