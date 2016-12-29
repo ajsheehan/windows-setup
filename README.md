@@ -20,9 +20,6 @@ First install Chocolatey
 ## Node.js
     $ choco install nodejs
 
-## Notepad++
-    $ choco install notepadplusplus
-
 ## Postman
 	$ choco install postman
 
