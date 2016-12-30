@@ -43,6 +43,21 @@ First install Chocolatey
 ## SQL Server Management Studio
 	$ choco install sql-server-management-studio
 
+## Visual Studio
+    $choco install visualstudio2015enterprise
+Function to Open Solution from PowerShell
+```powershell
+function vs($path = '.')
+{
+    Write-Host $path;
+    $s = ls $path *.sln -Rec | select -First 1;
+    if($s)
+    {
+        start $s.FullName
+    }
+}
+```
+
 ## Visual Studio Code
 	$ choco install visualstudiocode
 ### Plugins
