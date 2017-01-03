@@ -44,8 +44,15 @@ First install Chocolatey
 	$ choco install sql-server-management-studio
 
 ## Visual Studio
-    $choco install visualstudio2015enterprise
-Add the following function to PowerShell profile to open solution from PowerShell
+    $ choco install visualstudio2015enterprise
+Function open solution from PowerShell
+
+First, open PowerShell profile in VS Code
+
+    $ code $profile
+
+Then, add te following function and save
+
 ```powershell
 function vs($path = '.')
 {
