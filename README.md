@@ -45,7 +45,7 @@ First install Chocolatey
 
 ## Visual Studio
     $choco install visualstudio2015enterprise
-Function to Open Solution from PowerShell
+Add the following function to PowerShell profile to open solution from PowerShell
 ```powershell
 function vs($path = '.')
 {
