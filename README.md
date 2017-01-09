@@ -31,6 +31,9 @@ First install Chocolatey
 ## Node.js
     $ choco install nodejs
 
+## NuGet CLI
+    $ choco install nuget.commandline
+
 ## Postman
 	$ choco install postman
 
