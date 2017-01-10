@@ -31,18 +31,19 @@ First install Chocolatey
 ## ngrok
 1. Install ngrok
 
-    $ choco install ngrok.portable
+        $ choco install ngrok.portable
+
 2. Restart PowerShell and authenticate
 
-    $ ngrok authtoken {{auth token}}
+        $ ngrok authtoken {{authtoken}}
 
 3. Update the ngrok config with desired tunnels
 
-    $ code $HOME/.ngrok2/ngrok.yml
+        $ code $HOME/.ngrok2/ngrok.yml
 
-```json
+```
 tunnels:
-  {{tunnel name}}:
+  {{tunnelname}}:
     proto: http
     addr: {{port}}
     host_header: localhost
@@ -72,9 +73,9 @@ Function to open solution from PowerShell
 
 1. Open PowerShell profile in VS Code
 
-    $ code $profile
+        $ code $profile
 
-2. Add te following function and save
+2. Add the following function and save
 
 ```powershell
 function vs($path = '.')
