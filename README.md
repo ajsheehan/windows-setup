@@ -28,6 +28,26 @@ First install Chocolatey
 ## GitKraken
     $ choco install gitkraken
 
+## ngrok
+1. Install ngrok
+
+    $ choco install ngrok.portable
+2. Restart PowerShell and authenticate
+
+    $ ngrok authtoken {{auth token}}
+
+3. Update the ngrok config with desired tunnels
+
+    $ code $HOME/.ngrok2/ngrok.yml
+
+```json
+tunnels:
+  {{tunnel name}}:
+    proto: http
+    addr: {{port}}
+    host_header: localhost
+```
+
 ## Node.js
     $ choco install nodejs
 
@@ -48,13 +68,13 @@ First install Chocolatey
 
 ## Visual Studio
     $ choco install visualstudio2015enterprise
-Function open solution from PowerShell
+Function to open solution from PowerShell
 
-First, open PowerShell profile in VS Code
+1. Open PowerShell profile in VS Code
 
     $ code $profile
 
-Then, add te following function and save
+2. Add te following function and save
 
 ```powershell
 function vs($path = '.')
